@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #install rapoo v500 driver
-sudo cp ./ /usr/src/hid-rapoo-0.1
+sudo cp -r ./ /usr/src/hid-rapoo-0.1
 sudo dkms add hid-rapoo/0.1
 sudo dkms install hid-rapoo/0.1
 sudo modprobe hid-rapoo
